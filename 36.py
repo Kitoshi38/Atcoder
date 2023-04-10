@@ -6,11 +6,6 @@ for i in range(N):
     vw = list(map(int, input().split()))
     vws.append(vw)
 
-def chmax(a, b) -> bool:
-    if a < b:
-        a = b
-        return True
-    return False
 vws.sort(reverse=False, key=lambda x:(x[1], x[0]))
 tmp_w = 0
 for vw in reversed(vws):
